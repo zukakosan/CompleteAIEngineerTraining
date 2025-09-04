@@ -1,6 +1,5 @@
 import streamlit as st
 from openai import AzureOpenAI
-import os
 
 st.set_page_config(page_title="Azure OpenAI with Streamlit", layout="wide", page_icon="🤖")
 st.title("Azure OpenAI with Streamlit")
