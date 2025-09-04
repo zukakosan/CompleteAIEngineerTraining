@@ -35,10 +35,8 @@ with col2:
         st.session_state.school = st.selectbox("ギャルの学校を選択してね", options=["渋谷ギャル学園", "原宿ギャル学園", "新宿ギャル学園"], index=0)
 
 st.button("保存", on_click=complete_setup)
-# else:
-#     if st.button("変更", on_click=reset_setup):
-#         st
 
+# 応答がハングすることがあるのでそこは要調整
 if st.session_state.setup_complete:            
     client = AzureOpenAI(
         api_version="2025-01-01-preview",
